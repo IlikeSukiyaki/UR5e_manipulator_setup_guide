@@ -69,5 +69,23 @@ After completing the driver installation, you will find two folders in the works
 - `Universal_Robots_ROS_Driver` → ROS driver for UR robots.  
 
 Make sure both folders exist in the `src` directory to ensure correct setup and functionality.
+
+## Install URCap on the Physical UR Robot
+
+**URCap** is a plugin that allows the UR robot to be controlled by external devices. Without installing URCap, the robot can only be controlled using the teach pendant.
+
+### Steps to Install URCap:
+
+1. Download the URCap file from the following link:  
+   [URCap Installation Guide](https://github.com/UniversalRobots/Universal_Robots_ROS_Driver/blob/master/ur_robot_driver/doc/install_urcap_cb3.md)
+
+2. Follow the instructions in the guide to install URCap on your physical UR robot.
+
+---
+
+For more details and additional setup explanations, refer to this article:  
+[Real Robot Setup with UR5e](https://blog.csdn.net/Time_Memory_cici/article/details/130706760)
+
+
 ### Hello_world of UR5e
 ![Demonstration of UR5e Setup](./assets/start_demo.gif)
