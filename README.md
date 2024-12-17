@@ -4,7 +4,7 @@ This is a fast setup guide for my own usage as a reference to set up UR5e manipu
 
 ## Prerequisites
 
-- **Operating System:** Ubuntu 22.04
+- **Operating System:** Ubuntu 20.04
 - **ROS Version:** Noetic
 - **Manipulator:** UR5e
 
@@ -36,7 +36,7 @@ git clone -b melodic-devel https://github.com/ros-industrial/universal_robot.git
 git clone -b melodic-devel https://ghp.ci/https://github.com/ros-industrial/universal_robot.git src/universal_robot
 ```
 ### 2. Install Dependency
-```
+```bash
 # Install dependencies
 sudo apt update -qq
 rosdep update
