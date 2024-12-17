@@ -50,3 +50,23 @@ source devel/setup.bash
 ```
 After completing these steps, you can proceed with setting up the robot’s IP configuration and following the instructions in the driver documentation to connect and control the UR5e manipulator.
 
+# Understanding the Installed Files
+
+After completing the driver installation, you will find two folders in the workspace's `src` directory:
+
+1. **`universal_robot`**  
+   - This folder contains:
+     - **UR robot description files**: Defines the UR robot's kinematic and dynamic model.  
+     - **MoveIt! packages**: Provides motion planning capabilities for the UR robot.  
+
+2. **`Universal_Robots_ROS_Driver`**  
+   - This folder includes the **driver** that connects the UR robot to the ROS environment.
+
+---
+
+**Key Points**:  
+- `universal_robot` → Robot description and MoveIt! support.  
+- `Universal_Robots_ROS_Driver` → ROS driver for UR robots.  
+
+Make sure both folders exist in the `src` directory to ensure correct setup and functionality.
+
