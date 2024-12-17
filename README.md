@@ -35,3 +35,18 @@ git clone -b melodic-devel https://github.com/ros-industrial/universal_robot.git
 # For users in mainland China (domestic acceleration):
 git clone -b melodic-devel https://ghp.ci/https://github.com/ros-industrial/universal_robot.git src/universal_robot
 ```
+### 2. Install Dependency
+```
+# Install dependencies
+sudo apt update -qq
+rosdep update
+rosdep install --from-paths src --ignore-src -y
+
+# Build the workspace
+catkin_make
+
+# Activate the workspace (source it)
+source devel/setup.bash
+```
+After completing these steps, you can proceed with setting up the robot’s IP configuration and following the instructions in the driver documentation to connect and control the UR5e manipulator.
+
