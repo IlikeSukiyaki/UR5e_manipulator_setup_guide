@@ -1,6 +1,6 @@
 # UR5e_manipulator_setup_guide
 This is a fast setup guide for my own usage as a reference to set up UR5e manipulator under ubuntu 20.04 and ROS1. No guarantees on its generalization and effectiveness on other settings
-# Real-robot Setup with UR5e on Ubuntu 22.04 and ROS Noetic
+# Real-robot Setup with UR5e on Ubuntu 20.04 and ROS Noetic
 
 ## Prerequisites
 
