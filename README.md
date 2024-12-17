@@ -32,3 +32,6 @@ git clone https://github.com/UniversalRobots/Universal_Robots_ROS_Driver.git src
 
 # 4. Clone the `universal_robot` description package using the melodic-devel branch
 git clone -b melodic-devel https://github.com/ros-industrial/universal_robot.git src/universal_robot
+# For users in mainland China (domestic acceleration):
+git clone -b melodic-devel https://ghp.ci/https://github.com/ros-industrial/universal_robot.git src/universal_robot
+```
