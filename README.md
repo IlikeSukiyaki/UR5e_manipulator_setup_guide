@@ -70,3 +70,4 @@ After completing the driver installation, you will find two folders in the works
 
 Make sure both folders exist in the `src` directory to ensure correct setup and functionality.
 
+![Demonstration of UR5e Setup](./assets/start_demo.gif)
