@@ -142,7 +142,7 @@ Run the following command:
 ```bash
 sudo chmod 777 /dev/ttyUSB0
 ```
-**Once the connection is successful, the blue LED on the Robotiq gripper should light up, indicating that the gripper is ready to be controlled.**
+**_Once the connection is successful, the blue LED on the Robotiq gripper should light up, indicating that the gripper is ready to be controlled._**
 ### Run the Gripper Node
 
 ```bash
