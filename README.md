@@ -1,4 +1,28 @@
-# UR5e_manipulator_setup_guide
+# UR5e Manipulator Setup Guide
+
+This is a fast setup guide for personal usage to set up the UR5e manipulator under Ubuntu 20.04 and ROS1. No guarantees on its generalization or effectiveness in other settings.
+
+## Table of Contents
+1. [Real-robot Setup with UR5e on Ubuntu 20.04 and ROS Noetic](#real-robot-setup-with-ur5e-on-ubuntu-2004-and-ros-noetic)
+   1.1. [Prerequisites](#prerequisites)
+   1.2. [Installation Steps](#installation-steps)
+      1.2.1. [Install the Universal Robots ROS Driver](#install-the-universal-robots-ros-driver)
+      1.2.2. [Install Dependencies](#install-dependencies)
+   1.3. [Understanding the Installed Files](#understanding-the-installed-files)
+2. [Install URCap on the Physical UR Robot](#install-urcap-on-the-physical-ur-robot)
+3. [Hello World of UR5e](#hello-world-of-ur5e)
+4. [Installation and Testing of ROBOTIQ 2F Grippers](#installation-and-testing-of-robotiq-2f-grippers)
+   4.1. [Proof-of-concept Testing](#proof-of-concept-testing)
+   4.2. [Step 1: Create Test Workspace](#step-1-create-test-workspace)
+   4.3. [Step 2: Clone the Repository](#step-2-clone-the-repository)
+   4.4. [Step 3: Install Dependencies](#step-3-install-dependencies)
+   4.5. [Step 4: Running and Debugging the Robotiq Node](#step-4-running-and-debugging-the-robotiq-node)
+      4.5.1. [Check Serial Device Information](#check-serial-device-information)
+      4.5.2. [Set Permissions for the Serial Port](#set-permissions-for-the-serial-port)
+      4.5.3. [Run the Gripper Node](#run-the-gripper-node)
+   4.6. [Run the Control Example](#run-the-control-example)
+
+---
 This is a fast setup guide for my own usage as a reference to set up UR5e manipulator under ubuntu 20.04 and ROS1. No guarantees on its generalization and effectiveness on other settings
 # Real-robot Setup with UR5e on Ubuntu 20.04 and ROS Noetic
 
