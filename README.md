@@ -89,3 +89,72 @@ For more details and additional setup explanations, refer to this article:
 
 ### Hello_world of UR5e
 ![Demonstration of UR5e Setup](./assets/start_demo.gif)
+
+
+
+### Installation and Testing of ROBOTIQ 2F Grippers
+## Proof-of-concept Testing
+It is always good to start with a empty workspace and test the component individually. So, in this part, I will walk you through the guide.
+## Step 1: Create Test Workspace
+```bash
+   mkdir -p gripper_ws/src && cd gripper_ws
+   cd src
+   catkin_init_workspace
+```
+
+
+## Step 2: Clone the Repository
+
+Since the [ros-industrial/robotiq](https://github.com/ros-industrial/robotiq) repository does not contain the Noetic version, we will clone the repository from [jr-robotics/robotiq](https://github.com/jr-robotics/robotiq) instead.
+
+Run the following command to clone the repository:
+
+```bash
+git clone https://github.com/jr-robotics/robotiq
+```
+
+## Step 3: Install Dependency
+```bash
+rosdep update
+
+rosdep install --from-paths src --ignore-src -y
+
+cd grippers_ws
+catkin_make
+source devel/setup.bash
+```
+## Step4: Running and Debugging the Robotiq Node
+
+This guide explains how to run the Robotiq gripper node, check the serial device information, and troubleshoot any connection issues.
+
+Check Serial Device Information
+
+To check the available serial devices, run the following command:
+
+```bash
+dmesg | grep ttyS*
+```
+This command will list all the available serial ports. If there are multiple devices, you will need to try each one to identify the correct serial port.
+
+### Set Permissions for the Serial Port
+Grant all permissions to the identified serial port (e.g., /dev/ttyS0). If there are multiple devices, you may need to try each one.
+Run the following command:
+```bash
+sudo chmod 777 /dev/ttyUSB0
+```
+**Once the connection is successful, the blue LED on the Robotiq gripper should light up, indicating that the gripper is ready to be controlled.**
+### Run the Gripper Node
+
+```bash
+roscore
+rosrun robotiq_2f_gripper_control Robotiq2FGripperRtuNode.py /dev/ttyUSB0
+```
+
+
+For detailed instructions, refer to the following link:  
+[Setup Guide for Robotiq Gripper](https://blog.csdn.net/mc17852636978/article/details/129228971)
+
+
+
+
+
