@@ -149,6 +149,12 @@ sudo chmod 777 /dev/ttyUSB0
 roscore
 rosrun robotiq_2f_gripper_control Robotiq2FGripperRtuNode.py /dev/ttyUSB0
 ```
+### Run the control example
+The following command gives a control example of the gripper. When the instruction appears, please first press **"r"** to reset and press **"a"** to activate in order to activate the gripper.
+```bash
+rosrun robotiq_2f_gripper_control Robotiq2FGripperSimpleController.py
+```
+
 
 
 For detailed instructions, refer to the following link:  
