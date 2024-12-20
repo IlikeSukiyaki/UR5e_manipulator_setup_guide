@@ -116,9 +116,11 @@ For more details and additional setup explanations, refer to this article:
 
 ### Hello_world of UR5e
 ![Demonstration of UR5e Setup](./assets/start_demo.gif)
-
-
-
+### source bashrc
+```bash
+export ROS_IP=192.168.1.13
+export ROS_MASTER_URI=http://localhost:11311
+```
 ### Installation and Testing of ROBOTIQ 2F Grippers
 ## Proof-of-concept Testing
 It is always good to start with a empty workspace and test the component individually. So, in this part, I will walk you through the guide.
